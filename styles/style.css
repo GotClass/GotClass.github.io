@@ -1,38 +1,51 @@
-html{
-    font-size: 10px;
-    font-family: "Open Sans", sans-serif;
-    background-color: #00539f;
+.month{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    background-color: orange;
+    padding: 10px;
+    border: 4px solid black;
+    border-radius: 5px;
 }
 
-h1{
-    font-size: 60px;
-    text-align: center;
-    margin: 0;
-    padding: 20px 0;
-    color: #00539f;
-    text-shadow: 3px 3px 1px black;
+.monthDay{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    color: orange;
+    font-weight: bold;
+    text-shadow:  -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+    background-image: url('https://superdesigner.co/img/bg.png');
+    background-size: stretch;
 }
 
-h2{
-    font-size: 30px;
+.event{
+    border: 4px solid black;
+    border-radius: 5px;
+    color: black;
+    text-shadow: none;
+    padding: 5px;
 }
 
-p,
-li{
-    font-size: 16px;
-    line-height: 2;
-    letter-spacing: 1px;
+.addEventButton{
+    background-image: url('https://images.unsplash.com/photo-1617957718614-8c23f060c2d0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8b3JhbmdlJTIwZ3JhZGllbnR8ZW58MHx8MHx8fDA%3D&w=1000&q=80');
+    background-size: stretch;
+    font-weight: bold;
+    font-family: inherit;
+    border-radius: 5px;
 }
 
+.deleteEventButton{
+    background-image: url('https://images.unsplash.com/photo-1617957718614-8c23f060c2d0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8b3JhbmdlJTIwZ3JhZGllbnR8ZW58MHx8MHx8fDA%3D&w=1000&q=80');
+    background-size: stretch;
+    font-weight: bold;
+    font-family: inherit;
+    border-radius: 5px;
+}
 body{
-    width: 600px;
-    margin: 0 auto;
-    background-color: #ff9500;
-    padding: 0 20px 20px 20px;
-    border: 5px solid black;
+    background-color: whitesmoke;
 }
 
-img{
-    display: block;
-    margin: 0 auto;
-}
